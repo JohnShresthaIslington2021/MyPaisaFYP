@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="MyPaisa.Views.LoginPage"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+       
+        <StackLayout Orientation="Vertical" Padding="10,0,10,0" VerticalOptions="Center" Spacing="20">
+
+            
+            <Image Source="logo-no-background.png" VerticalOptions="Center" HeightRequest="200" WidthRequest="200"/>
+
+            <Label Text="Welcome" FontSize="24" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <Label Text="Login in to your accout" FontSize="20" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <StackLayout Orientation="Horizontal">
+                <Frame HasShadow="True" BorderColor="White" HeightRequest="6" WidthRequest="6" CornerRadius="22">
+                    <Image Source="logo-white.png" HeightRequest="20" WidthRequest="20"/>
+
+
+                </Frame>
+                <Frame HasShadow="False" HeightRequest="45" BorderColor="White" Margin="-1,0,0,0" Padding="0" HorizontalOptions="FillAndExpand">
+
+                    <Entry VerticalOptions="Center" Placeholder="User Name" Keyboard="Email"/>
+
+                </Frame>
+
+            </StackLayout>
+
+
+             <StackLayout Orientation="Horizontal">
+                <Frame HasShadow="True" BorderColor="White" HeightRequest="6" WidthRequest="6" CornerRadius="22">
+                    <Image Source="logo-white.png" HeightRequest="20" WidthRequest="20" />
+
+
+                </Frame>
+                <Frame HasShadow="False" HeightRequest="45" BorderColor="White" Margin="-1,0,0,0" Padding="0" HorizontalOptions="FillAndExpand">
+
+                    <Entry VerticalOptions="Center" Placeholder="Password" Keyboard="Email"/>
+
+                </Frame>
+
+            </StackLayout>
+            
+             <Button VerticalOptions="End" Text="Login" HorizontalOptions="Center" WidthRequest="200" CornerRadius="22"/>
+
+            <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center">
+                <Label Text="Don't have an account?" TextColor="DarkGray"/>
+                <Label Text="Sign up" TextColor="Gray"/>
+
+
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
